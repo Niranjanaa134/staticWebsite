@@ -1,0 +1,138 @@
+:root{
+    --yellow:#FFD271;
+    --red:#f70505;
+    --green:#93f360;
+    --white:#D2DEDD;
+}
+body,h2{
+    margin:0;
+    font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+img{
+    opacity:0.1;
+}
+.landing{
+    background-image: url('../Images/BackGroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    color:var(--white);
+}
+header a{
+    text-decoration: none;
+    color:var(--red);
+    font-weight: bold;
+    position:sticky;
+    top:0;
+    min-width:120px;
+}
+
+header{
+    display:flex;
+    padding:1em;
+    background-color: #4e4e4d;
+    border-radius: 20px;
+    /* margin-top:.5%; */
+    opacity:0.7;
+    flex-wrap: wrap;
+    row-gap:1em;
+}
+#logo{
+    flex:3;
+    font-size: 1.5em;
+    min-width:260px;
+}
+nav{
+    flex:2;
+    display:flex;
+}
+nav a{
+    flex:1;
+}
+nav a:hover{
+    color:var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height:50vh;
+    justify-content: center;
+    padding:2em;
+}
+.tagline1{
+    color:var(--red);
+    font-size:2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color:var(--yellow);
+    font-size: 1.5em;
+}
+.maintext div{
+    margin-top:.75em;
+}
+.maintext button{
+    width:16vw;
+    margin-top: 1.5em;
+    border-radius:10px;
+    padding:.7em;
+    background-color: var(--green);
+    color:var(--red);
+    font-weight:bold;
+    border:1px solid var(--green);
+}
+.menucontent{
+    background-image: linear-gradient(to right,#4e4e4d,#171716);
+    color:var(--white);
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+#menuheading,#locheading{
+    background-image: linear-gradient(to right,#4e4e4d,#171716);
+    color:var(--red);
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.menucontent th{
+    color:var(--green);
+    font-size: 1em;
+}
+table{
+    width:100%;
+    padding:1em;
+}
+.menucontent tr{
+    display: flex;
+    justify-content: center;
+    margin-top:.8em;
+}
+.menucontent td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+.menucontent td:nth-child(2){
+    justify-self: right;
+}
+.locations{
+    background-image: linear-gradient(to right,#4e4e4d,#171716);
+    color: var(--white);
+    display:flex;
+    flex-wrap:wrap;
+}
+.locations h2{
+    color:var(--green);
+    margin-bottom: .8em;
+}
+.locations div{
+    flex:1;
+    padding:1em;
+}
+footer{
+    background-color: #171716;
+    color:#ffff;
+    padding:.25em 1em;
+}
+header i{
+    margin-right:.5em;
+}
